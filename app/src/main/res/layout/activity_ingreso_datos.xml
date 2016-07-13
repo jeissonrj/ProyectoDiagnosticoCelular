@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jeisson.diagnosticocelular.ingreso_datos">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_gravity="right"
+        android:width="280dp"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/msninicial"
+        android:layout_margin="10dp"
+        android:hint=" CLIENTE"
+        style="@style/temaedit"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_gravity="right"
+        android:width="280dp"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/editText1"
+        android:layout_margin="10dp"
+        android:hint=" NIT"
+        style="@style/temaedit"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_gravity="right"
+        android:width="280dp"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText2"
+        android:layout_margin="10dp"
+        android:hint=" SUCURSAL"
+        style="@style/temaedit"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_gravity="right"
+        android:width="280dp"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText3"
+        android:layout_margin="10dp"
+        android:hint=" DIRECCION"
+        style="@style/temaedit"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_gravity="right"
+        android:width="280dp"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText4"
+        android:layout_margin="10dp"
+        android:hint=" CIUDAD"
+        style="@style/temaedit"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_gravity="right"
+        android:width="280dp"
+        android:textSize="24dp"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText5"
+        android:layout_margin="10dp"
+        android:hint=" ABONADO (sí fue asignado)"
+        style="@style/temaedit"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="DIAGNOSTICAR"
+        android:id="@+id/diagnosticar"
+        android:width="160dp"
+        android:maxHeight="20dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@id/editText6"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="CONSULTAR DIAGNOSTICOS"
+        android:id="@+id/consultar"
+        android:onClick="onClick"
+        android:width="160dp"
+        android:layout_below="@id/editText6"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/diagnosticar"
+        android:layout_toEndOf="@+id/diagnosticar" />
+
+</RelativeLayout>
+

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:stretchColumns="1"
+    android:padding="5dp"
+    tools:context="com.example.jeisson.diagnosticocelular.cuadro_mediciones">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_column="0"
+                android:text="DATOS CLIENTE"
+                android:gravity="center"
+                android:padding="16dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0" android:text="CLIENTE" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1" android:id="@+id/cliente" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2" android:text="NIT" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3" android:id="@+id/nit" android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0" android:text="SUCURSAL" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1" android:id="@+id/sucursal" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2" android:text="DIRECCION" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3" android:id="@+id/direccion" android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0" android:text="CIUDAD" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1" android:id="@+id/ciudad" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2" android:text="ABONADO" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3" android:id="@+id/abonado" android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0" android:text="HORA" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1" android:id="@+id/hora" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2" android:text="FECHA" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3" android:id="@+id/fecha" android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0" android:text="LATITUD" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1" android:id="@+id/latitud" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2" android:text="LONGITUD" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3" android:id="@+id/longitud" android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0" android:text="OPERADOR SIM" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1" android:id="@+id/operador_sim" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2" android:text="TECNOLOGIA SIM" android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3" android:id="@+id/tecnologia_sim" android:layout_weight="1"/>
+        </TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="MEDIDAS OBTENIDAS"
+            android:gravity="center"
+            android:padding="16dp"/>
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="1"
+                android:text="OPERADOR RED 1"
+                android:id="@+id/operador_red_1"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="2"
+                android:text="OPERADOR RED 2"
+                android:id="@+id/operador_red_2"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_column="3"
+                android:text="OPERADOR RED 3"
+                android:id="@+id/operador_red_3"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:text="TECNOLOGIA 2G"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/tecno_op_red_1_2g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="2"
+                android:id="@+id/tecno_op_red_2_2g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="3"
+                android:id="@+id/tecno_op_red_3_2g"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:text="NIVEL DE SEÑAL 2G"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/señal_op_red_1_2g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="2"
+                android:id="@+id/señal_op_red_2_2g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="3"
+                android:id="@+id/señal_op_red_3_2g"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:text="TECNOLOGIA 3G"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/tecno_op_red_1_3g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="2"
+                android:id="@+id/tecno_op_red_2_3g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="3"
+                android:id="@+id/tecno_op_red_3_3g"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:text="NIVEL DE SEÑAL 3G"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="1"
+                android:id="@+id/señal_op_red_1_3g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="2"
+                android:id="@+id/señal_op_red_2_3g"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_column="3"
+                android:id="@+id/señal_op_red_3_3g"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TextView
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="NIVEL DE SEÑAL 3G"
+                android:layout_span="2" />
+
+            <Button
+                android:text="Configure modo de red GSM (2G)"
+                android:id="@+id/configurar_red_2g"
+                android:enabled="true" />
+            <Button
+                android:text="Configure operador de red 2"
+                android:id="@+id/configurar_operador2_2g"
+                android:enabled="false" />
+            <Button
+                android:text="Configure operador de red 3"
+                android:id="@+id/configurar_operador3_2g"
+                android:enabled="false" />
+            <Button
+                android:text="Configure modo de red WCDMA (3G)"
+                android:id="@+id/configurar_red_3g"
+                android:enabled="false" />
+            <Button
+                android:text="Configure operador de red 2"
+                android:id="@+id/configurar_operador2_3g"
+                android:enabled="false" />
+            <Button
+                android:text="Configure operador de red 1"
+                android:id="@+id/configurar_operador3_3g"
+                android:enabled="false" />
+    </TableLayout>
+</ScrollView>
